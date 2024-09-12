@@ -31,7 +31,11 @@ class Layer():
         self.v_biases = np.zeros_like(self.biases)
         self.t = 0
 
-
+    def get_weights(self):
+        return self.weights
+    
+    def set_weights(self,best_weights):
+        self.weights=best_weights
     
     def xavier_Initialization(self,input_n,output_n):
         
